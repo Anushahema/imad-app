@@ -1,2 +1,2 @@
 console.log('Loaded!');
-console("inspect")
+console("inspect");
