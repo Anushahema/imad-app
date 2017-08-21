@@ -27,7 +27,7 @@
          <script type="text/javascript">
             var button=document.getElementById("counter");
             var counter=0;
-            var req=new XMLHTTPRequest();
+     
             button.onclick=function(){
                 var req=new XMLHTTPRequest();
                 req.onreadystatechange=function(){
@@ -42,13 +42,13 @@
                         }
                     }
                 };
-   
+                var nameinput=document.getElementById("name");
+                var fname=nameinput.value;
+                req.open('GET','http://anushasakthinathan.imad.hasura-app.io/counter',true);
+                req.send(null);
             };
-            var nameinput=document.getElementById("name");
-            var fname=nameinput.value;
-            req.open('GET','http://anushasakthinathan.imad.hasura-app.io/counter',true);
-            req.send(null);
-            var request=new XMLHTTPRequest();
+           
+            
             var submit=document.getElementById("submit");
             submit.onclick=function(){
                 var request=new XMLHTTPRequest();
@@ -68,12 +68,12 @@
                         }
                     }
                 };
-   
+                var nameinput=document.getElementByid("name");
+                var fname=nameinput.value;
+                request.open('GET','http://anushasakthinathan.imad.hasura-app.io/submit_name?name='+name,true);
+                request.send(null);
             };
-            var nameinput=document.getElementByid("name");
-            var fname=nameinput.value;
-            request.open('GET','http://anushasakthinathan.imad.hasura-app.io/submit_name?name='+name,true);
-            request.send(null);
+            
         </script>
     </body>
 </html>
