@@ -22,5 +22,5 @@ submit.onclick=function(){
     var ul=document.getElementByid("namelist");
     ul.innerHTML=list;
 };
-req.open('GET','http://anushasakthinathan.imad.hasura-app.io/submit_name?name'+name,true);
+req.open('GET','http://anushasakthinathan.imad.hasura-app.io/submit_name?name='+name,true);
 req.send(null);
