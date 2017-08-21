@@ -48,7 +48,7 @@
             req.open('GET','http://anushasakthinathan.imad.hasura-app.io/submit_name?name='+name,true);
             req.send(null);
 
-            var submit=document.getElementByid("submit");
+            var submit=document.getElementById("submit");
             submit.onclick=function(){
                 var request=new XMLHTTPRequest();
                 req.onreadystatechange=function(){
