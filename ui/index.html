@@ -51,7 +51,7 @@
             var submit=document.getElementById("submit");
             submit.onclick=function(){
                 var request=new XMLHTTPRequest();
-                req.onreadystatechange=function(){
+                request.onreadystatechange=function(){
                     if(request.readystate==XMLHTTPRequest.DONE)
                     {
                         if(request.status==200)
