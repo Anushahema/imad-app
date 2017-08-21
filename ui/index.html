@@ -43,7 +43,7 @@
                 };
    
             };
-            var nameinput=document.getElementByid("name");
+            var nameinput=document.getElementById("name");
             var fname=nameinput.value;
             req.open('GET','http://anushasakthinathan.imad.hasura-app.io/submit_name?name='+name,true);
             req.send(null);
