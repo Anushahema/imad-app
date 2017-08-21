@@ -1,7 +1,6 @@
 console.log('Loaded!');
 
-var nameinput=document.getElementByid("name");
-var fname=nameinput.value;
+
 var submit=document.getElementByid("submit");
 submit.onclick=function(){
     var req=new XMLHTTPRequest();
@@ -23,5 +22,7 @@ submit.onclick=function(){
     };
    
 };
+var nameinput=document.getElementByid("name");
+var fname=nameinput.value;
 req.open('GET','http://anushasakthinathan.imad.hasura-app.io/submit_name?name='+name,true);
 req.send(null);
