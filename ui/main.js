@@ -25,13 +25,13 @@ req.send(null);
 
 var submit=document.getElementByid("submit");
 submit.onclick=function(){
-    var req=new XMLHTTPRequest();
+    var request=new XMLHTTPRequest();
     req.onreadystatechange=function(){
-        if(req.readystate==XMLHTTPRequest.DONE)
+        if(request.readystate==XMLHTTPRequest.DONE)
         {
-            if(req.status==200)
+            if(request.status==200)
             {
-                var name=req.responsetext;
+                var name=request.responsetext;
                 name=JSON.parse(names);
                 var list='';
                 for(var i=0;i<names.length;i++){
