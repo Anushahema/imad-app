@@ -1,6 +1,6 @@
 console.log('Loaded!');
 
-var butoon=document.getElementByid("counter");
+var button=document.getElementByid("counter");
 var counter=0;
 button.onclick=function(){
     var req=new XMLHTTPRequest();
