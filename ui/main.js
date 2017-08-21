@@ -17,3 +17,5 @@ button.onclick=function(){
     };
     counter=counter+1;
 };
+req.open('GET','http://anushasakthinathan.imad.hasura-app.io/counter',true);
+req.send(null);
