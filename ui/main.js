@@ -1,6 +1,6 @@
-var button=document.getElementById("counter");
+var button=document.getElementById('counter');
 var counter=0;
-button.onclick=function(){
+button.onclick = function(){
     var req=new XMLHttpRequest();
     req.onreadystatechange=function(){
         if(req.readystate==XMLHttpRequest.DONE)
@@ -19,8 +19,8 @@ button.onclick=function(){
 };
            
             
-var submit=document.getElementById("submit");
-submit.onclick=function(){
+var submit=document.getElementById('submit');
+submit.onclick = function(){
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
         if(request.readystate==XMLHttpRequest.DONE)
