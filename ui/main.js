@@ -19,8 +19,8 @@ button.onclick = function(){
 };
            
             
-var submit=document.getElementById('submit');
-submit.onclick = function(){
+var sub=document.getElementById('submit');
+sub.onclick = function(){
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
         if(request.readystate==XMLHttpRequest.DONE)
