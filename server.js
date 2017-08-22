@@ -20,6 +20,10 @@ app.get('/anusha1',function(req,res){
     res.sendFile(path.join(__dirname,'ui','anusha1.html'));
 });
 
+app.get('/ui/main.js',function(req,res){
+    res.sendFile(path.join(__dirname,'ui','main.js'));
+});
+
 var counter=0;
 app.get('/counter',function(req,res){
     counter=counter+1;
