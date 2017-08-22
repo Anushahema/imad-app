@@ -33,7 +33,7 @@ app.get('/counter',function(req,res){
 var namek=[];
 app.get('/submit_name',function(req,res){
    var namek=req.query.name;
-   name.push(namek);
+   names.push(namek);
    res.send(JSON_stringify(names));
 });
 // Do not change port, otherwise your app won't run on IMAD servers
