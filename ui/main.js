@@ -9,7 +9,7 @@ button.onclick = function(){
             {
                 var counter=req.responsetext;
                 counter=counter+1;
-                var span=document.getelementById("count");
+                var span=document.getelementById('count');
                 span.innerHTML=counter.tostring();
             }
         }
@@ -33,12 +33,12 @@ submit.onclick = function(){
                 for(var i=0;i<names.length;i++){
                     list+='<li>'+names[i]+'</li>';
                 }
-                var ul=document.getElementById("namelist");
+                var ul=document.getElementById('namelist');
                 ul.innerHTML=list;
             }
         }
     };
-    var nameinput=document.getElementByid("name");
+    var nameinput=document.getElementByid('name');
     var name=nameinput.value;
     request.open('GET','http://anushasakthinathan.imad.hasura-app.io/submit_name?name='+name,true);
     request.send(null);
