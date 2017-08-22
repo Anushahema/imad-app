@@ -14,8 +14,6 @@ button.onclick=function(){
             }
         }
     };
-    var nameinput=document.getElementById("name");
-    var fname=nameinput.value;
     req.open('GET','http://anushasakthinathan.imad.hasura-app.io/counter',true);
     req.send(null);
 };
@@ -41,7 +39,7 @@ submit.onclick=function(){
         }
     };
     var nameinput=document.getElementByid("name");
-    var fname=nameinput.value;
+    var name=nameinput.value;
     request.open('GET','http://anushasakthinathan.imad.hasura-app.io/submit_name?name='+name,true);
     request.send(null);
 };
