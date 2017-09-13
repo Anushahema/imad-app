@@ -1,7 +1,6 @@
 console.log('logged');
 var counter=0;
 var button=document.getElementById('co');
-
 button.onclick=function()
 {
     var req=new XMLHttpRequest();
