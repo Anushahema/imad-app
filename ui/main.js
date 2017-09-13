@@ -1,7 +1,7 @@
 console.log('logged');
 var counter=0;
 var button=document.getElementById('co');
-button.onclick=function()
+/*button.onclick=function()
 {
     var req=new XMLHttpRequest();
     req.onreadystatechange=function()
@@ -19,7 +19,7 @@ button.onclick=function()
     };
     req.open('GET','http://anushasakthinathan.imad.hasura-app.io/counter',true);
     req.send(null);
-};
+};*/
            
             
 var sub=document.getElementById('submit');
