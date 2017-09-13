@@ -43,3 +43,8 @@ sub.onclick = function(){
     request.open('GET','http://anushasakthinathan.imad.hasura-app.io/submit_name?name='+name,true);
     request.send(null);
 };
+var img=document.getElementById('img');
+img.onclick=function(){
+    img.style.marginleft='100px';
+    
+};
