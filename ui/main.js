@@ -23,7 +23,7 @@ var button=document.getElementById('co');
            
             
 var sub=document.getElementById('submit');
-sub.onclick = function(){
+sub.onclick=function(){
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
         if(request.readystate==XMLHttpRequest.DONE)
