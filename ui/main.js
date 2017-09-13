@@ -1,9 +1,12 @@
-var button=document.getElementById('counter');
-var counter=0;
+console.log('logged');
 
-button.onclick=function(){
+var button=document.getElementById('co');
+var counter=0;
+button.onclick=function()
+{
     var req=new XMLHttpRequest();
-    req.onreadystatechange=function(){
+    req.onreadystatechange=function()
+    {
         if(req.readystate==XMLHttpRequest.DONE)
         {
            if(req.status==200)
