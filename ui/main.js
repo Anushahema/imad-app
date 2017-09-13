@@ -19,7 +19,7 @@ var button=document.getElementById('co');
     };
     req.open('GET','http://anushasakthinathan.imad.hasura-app.io/counter',true);
     req.send(null);
-};*/
+};
            
             
 var sub=document.getElementById('submit');
@@ -45,7 +45,7 @@ sub.onclick=function(){
     var name=nameinput.value;
     request.open('GET','http://anushasakthinathan.imad.hasura-app.io/submit_name?name='+name,true);
     request.send(null);
-};
+};*/
 var img=document.getElementById('image');
 img.onclick=function(){
     img.style.marginleft='100px';
